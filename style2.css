@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: grey;
+    height: 100vh;
+    text-align: center;
+}
+.content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.main_heading{
+    line-height: 2;
+}
+
+.pricing{
+    padding: 10vh 0;
+}
+
+.pages{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 5vh 0;
+}
+.pages .one{
+    text-align: left;
+    top: 25%;
+    position: relative;
+}
+.pages .two{
+    text-align: right;
+}
+.pages .two b{
+    font-size: 50px;
+}
+
+.subscription_type{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    padding-top: 5vh;
+}
+.subscription_type p{
+    padding: 0 3vw;
+}
+
+.trial_desc{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-bottom: 5vh;
+}
+.trial_desc div{
+    text-align: left;
+}
+
+button{
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.slider_div input{
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+}
+.slider{
+    width: 90%;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+    opacity: 0.7;
+    background-color: hsl(174, 77%, 80%);
+}
+.slider:hover{
+    opacity: 1;
+}
+.slider::-ms-thumb{
+    cursor: pointer;
+    background-image: url("images/icon-slider.svg");
+    background-size: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: hsl(174, 86%, 45%);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 25px;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    cursor: pointer;
+    background-image: url("images/icon-slider.svg");
+    background-size: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: hsl(174, 86%, 45%);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 25px;
+}
+.slider::-moz-range-thumb{
+    cursor: pointer;
+    background-image: url("images/icon-slider.svg");
+    background-size: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: hsl(174, 86%, 45%);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.attribution{
+    bottom: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: black;
+}
+
+@media only screen and (max-height: 440px){
+    body{
+        height: auto;
+    }
+    .attribution{
+        position: sticky;
+    }
+}

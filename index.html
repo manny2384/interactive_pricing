@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" media="screen and (max-width: 799px) and (max-height: 799px)" type="text/css" href="./style.css" />
+  <link rel="stylesheet" media="screen and (min-width: 800px)" type="text/css" href="./style2.css" />
   <title>Frontend Mentor | Interactive pricing component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,24 +17,54 @@
 </head>
 <body>
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+  <div class="main_heading">
+    <h1>Simple, traffic-based pricing</h1>
+    <p>  Sign-up for our 30-day trial. No credit card required. </p>
+  </div>
 
-  Pageviews
-  $ /month
-
-  Monthly Billing
-  Yearly Billing 25% discount
-
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial
+  <div class="content">
+    <div class="pricing">
+      <div class="pages"> 
+        <p class="one"> <span id="pages_per_read"> 10k </span> PAGEVIEWS </p>
+        <p class="two">
+          <b>$<span class="price" id="new_price"> 8.00 </span></b> /month
+      </p>
+      </div>
+      <div class="slider_div"> 
+        <input type="range" class="slider" id="range" min="1" max="5" value="1"> 
+      </div>
+      <div class="price_month">
   
+      </div>
+      <div class="subscription_type">
+        <p>
+          <label>
+            <input type="checkbox" disabled="disabled" checked="checked" id="month" value=0/> Monthly Billing
+          </label>
+        </p>
+        <p><label>
+          <input type="checkbox" id="year" value=1/> Yearly Billing
+        </label> <b>25%</b></p>
+      </div>
+    </div>
+  
+    <div class="trial_desc">
+      <div>
+        <p>&#x2713; Unlimited websites </p>
+        <p>&#x2713; 100% data ownership </p>
+        <p>&#x2713; Email reports </p>
+      </div>
+      <button>Start my trial</button>
+    </div>
+  </div>
+
+  
+<footer>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Emmanuel Gonzalez</a>.
   </div>
+</footer>
 </body>
+<script src="./index.js"></script>
 </html>
